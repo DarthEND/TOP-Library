@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Library | the Odin Project</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header>
+    <h1>Library</h1>
+  </header>
+  <main>
+    <div class="addBook">
+      <button id="addBookModalOpen" onclick="toggleModal('addBookModal')">Add Book to Library</button>
+    </div>
+
+    <div class="bookShelf">
+
+    </div>
+
+    <div class="addBookModal" id="addBookModal">
+      <div class="headerModal">
+        <h2>Add Book</h2>
+        <button id="addBookModalClose" onclick="toggleModal('addBookModal')">X</button>
+      </div>
+      <label for="title">Title:
+        <input type="text" name="title" id="title">
+      </label>
+      <label for="author">Author:
+        <input type="text" name="author" id="author">
+      </label>
+      <label for="pages">Pages:
+        <input type="number" name="pages" id="pages">
+      </label>
+      <div class="bookRead">
+        <input type="checkbox" id="readStatusModal">
+      </div>
+      <button id="addBookBtn">Add Book</button>
+    </div>
+    
+    <div class="editBookModal" id="editBookModal">
+      <div class="headerModal">
+        <h2>Edit Book</h2>
+        <button id="editBookModalClose" onclick="toggleModal('editBookModal')">X</button>
+      </div>
+      <label for="title">Title:
+        <input type="text" name="title" id="editTitle">
+      </label>
+      <label for="author">Author:
+        <input type="text" name="author" id="editAuthor">
+      </label>
+      <label for="pages">Pages:
+        <input type="number" name="pages" id="editPages">
+      </label>
+      <div class="bookRead">
+        <input type="checkbox" id="editReadStatusModal">
+      </div>
+      <button id="editBookBtn">Edit Book</button>
+    </div>
+  </main>
+  <footer>
+    <p>Created by <a target="_blank" href="https://github.com/DarthEND">Oleg Andronic / DarthEND</a></p>
+  </footer>
+  <script src="script.js"></script>
+</body>
+</html>
